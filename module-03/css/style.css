@@ -1,0 +1,169 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+::after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 902px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.page-header {
+    margin-bottom: 26px;
+}
+
+.page-nav {
+    padding: 78px 0;
+}
+
+.site-navigation {
+    display: inline-block;
+    vertical-align: middle;
+    width: 902px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+    text-align: center;
+}
+
+.site-navigation li {
+    display: inline-block;
+}
+
+.lifestyle {
+    margin-right: 120px;
+}
+
+.photodiary {
+    margin-right: 104px;
+}
+
+.music {
+    margin-right: 95px;
+}
+
+.site-navigation a {
+    display: block;
+    color: #626262;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #0000ff;
+}
+
+.stories {
+    margin-bottom: 54px;
+}
+
+.stories-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.stories-list-item {
+    display: inline-block;
+    width: 420px;
+    margin-right: 61px;
+    margin-bottom: 130px;
+    text-align: justify;
+}
+
+.stories-list-item:nth-child(2n) {
+    margin-right: 0px;
+}
+
+.stories-list-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+}
+
+.stories-list-image {
+    margin-bottom: 30px;
+}
+
+.stories-list-label {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 26px;
+    line-height: 17px;
+    color: #b4ad9e;
+    text-transform: uppercase;
+}
+
+.stories-list-name {
+    line-height: 36px;
+    color: #626262;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+
+.stories-list-about {
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.page-footer {
+    margin-bottom: 70px;
+}
+
+.download-button {
+    display: block;
+    margin: auto;
+    border: 2px solid #626262;
+    min-width: 164px;
+    padding: 20px 32px;
+    background-color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    color: #626262;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+button.download-button:hover,
+button.download-button:focus {
+    color: #0000ff;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
