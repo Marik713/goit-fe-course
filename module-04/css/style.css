@@ -1,0 +1,293 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: 63px;
+}
+
+.page-nav {
+    padding: 34px 0;
+}
+
+.site-logo {
+    display: inline-block;
+}
+
+.site-navigation {
+    float: right;
+    width: 466px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 900;
+    list-style: none;
+}
+
+.site-navigation li {
+    float: left;
+    vertical-align: middle;
+}
+
+.site-navigation a {
+    padding-top: 9px;
+    display: block;
+    font-weight: 900;
+    line-height: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #1abc9c;
+}
+
+.site-logo {
+    text-decoration: none;
+}
+
+.M {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 32px;
+    color: #1abc9c;
+}
+
+.ART {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 32px;
+    color: #555252;
+}
+
+.home {
+    margin-right: 33px;
+}
+
+.about {
+    margin-right: 35px;
+}
+
+.page {
+    margin-right: 29px;
+}
+
+.shop {
+    margin-right: 26px;
+}
+
+.blog {
+    margin-right: 27px;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    line-height: 32px;
+    color: #555252;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.features-title {
+    margin-bottom: 92px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #4ec6ab;
+    margin: 32px auto;
+}
+
+.features {
+    margin-bottom: 106px;
+}
+
+.features-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.features-list-item:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.features-list-item {
+    float: left;
+    width: 255px;
+    height: auto;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.clothes-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0px;
+}
+
+.clothes-item {
+    float: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    line-height: 32px;
+    font-size: 18px;
+    text-transform: uppercase;
+    height: 40px;
+    width: 201px;
+    background-color: #323232;
+    color: #ffffff;
+    padding: 4px 14px 0 14px;
+}
+
+.price {
+    float: right;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    line-height: 32px;
+    font-size: 18px;
+    height: 40px;
+    width: 54px;
+    text-align: center;
+    background-color: #8c8c8c;
+    color: #ffffff;
+    padding-top: 4px;
+}
+
+.features-list-item:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+}
+
+.features-list-item:hover .clothes-item {
+    background-color: #1abc9c;
+}
+
+.features-list-item:hover .price {
+    background-color: #7fd9c7;
+}
+
+.news {
+    margin-bottom: 82px;
+}
+
+.news-title {
+    margin-bottom: 80px;
+}
+
+.news-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.news-list-item {
+    float: left;
+    width: 350px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.news-list-item:nth-child(3n) {
+    margin-right: 0px;
+}
+
+h3 {
+    line-height: 26px;
+    color: #555252;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    margin-top: 8px;
+    text-align: left;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    width: 136px;
+    height: 3px;
+    background-color: #4ec6ab;
+    margin: 8px 0 0 0;
+}
+
+.news-list-about {
+    color: #555252;
+    width: 350px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.download-button {
+    display: block;
+    background-color: #4ec6ab;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    border-radius: 3px;
+    width: 160px;
+    height: 52px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
