@@ -1,0 +1,439 @@
+@font-face {
+    font-family: "Roboto-Black";
+    src: url("../fonts/Roboto-Black.eot");
+    src: url("../fonts/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans-Regular";
+    src: url("../fonts/OpenSans-Regular.eot");
+    src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans-Bold ";
+    src: url("../fonts/OpenSans-Bold.eot");
+    src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../fonts/Roboto-Light.eot");
+    src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Open Sans-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.page-nav {
+    padding: 31px 0 24px;
+}
+
+.site-logo {
+    display: inline-block;
+}
+
+.site-navigation {
+    float: right;
+    width: 466px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 900;
+    list-style: none;
+}
+
+.site-navigation li {
+    float: left;
+    vertical-align: middle;
+}
+
+.site-navigation a {
+    padding-top: 9px;
+    display: block;
+    font-weight: 900;
+    line-height: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0f0101;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #1abc9c;
+}
+
+.site-logo {
+    text-decoration: none;
+}
+
+.M {
+    font-family: "Roboto-Black", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 32px;
+    color: #1abc9c;
+}
+
+.ART {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 32px;
+    color: #555252;
+}
+
+.home {
+    margin-right: 33px;
+}
+
+.about {
+    margin-right: 36px;
+}
+
+.page {
+    margin-right: 30px;
+}
+
+.shop {
+    margin-right: 27px;
+}
+
+.blog {
+    margin-right: 34px;
+}
+
+.slider {
+    padding: 0;
+    margin-bottom: 102px;
+}
+
+.slider-item {
+    position: relative;
+}
+
+.slider img {
+    display: block;
+    max-width: 100%;
+}
+
+.description {
+    position: absolute;
+    z-index: 2;
+    top: 178px;
+    left: 425px;
+}
+
+.guide {
+    font-family: "Roboto-Black";
+    font-size: 60px;
+    line-height: 7px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.proposition {
+    font-family: "Roboto-Light";
+    font-size: 24px;
+    line-height: 6px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.slider .slick-prev,
+.slider .slick-next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 226px auto 0;
+    padding: 50px 50px;
+    z-index: 5;
+    font-size: 0;
+    border: none;
+}
+
+.slider .slick-next {
+    right: 246px;
+    background: url("../img/slider/next.png") no-repeat;
+    background-position: center;
+    background-color: #4f9c8a;
+}
+
+.slider .slick-prev {
+    left: 246px;
+    background: url("../img/slider/pre.png") no-repeat;
+    background-position: center;
+    background-color: #4f9c8a;
+}
+
+h1 {
+    font-family: "Roboto-Black", sans-serif;
+    font-size: 48px;
+    line-height: 32px;
+    color: #555252;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #4ec6ab;
+    margin: 33px auto 81px;
+}
+
+.collection {
+    margin-bottom: 100px;
+}
+
+.collection-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.collection-list-item:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.collection-list-item {
+    float: left;
+    width: 255px;
+    height: auto;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.clothes-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0px;
+}
+
+.special-info {
+    border-width: 10px;
+    border-color: #ffffff;
+    border-style: solid;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    bottom: 0;
+    width: 100%;
+    height: 283px;
+}
+
+.icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 172px;
+    font-size: 14px;
+    position: absolute;
+    left: 18%;
+    top: 28%;
+    opacity: 0;
+}
+
+.icons li {
+    float: left;
+    margin-right: 7px;
+    margin-bottom: 7px;
+}
+
+.icons a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-style: solid;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pay a {
+    width: 164px;
+    height: 50px;
+}
+
+.icon-like {
+    background-image: url(../img/icons/icon1.png);
+}
+
+.icon-exchange {
+    background-image: url(../img/icons/icon2.png);
+}
+
+.icon-clock {
+    background-image: url(../img/icons/icon3.png);
+}
+
+.icon {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-style: solid;
+    background-color: #323232;
+}
+
+.cash {
+    padding: 0 0 0 16px;
+}
+
+.paycash::before {
+    display: inline-block;
+    content: "";
+    width: 28px;
+    height: 27px;
+    background-image: url(../img/icons/icon4.png);
+    background-position: center;
+    vertical-align: middle;
+}
+
+.collection-list-item:hover .icons,
+.collection-list-item:focus .icons {
+    opacity: 1;
+}
+
+.icons a:hover,
+.icons a:focus {
+    background-color: #1abc9c;
+    border: none;
+}
+
+li .clock {
+    margin-right: 0;
+}
+
+li .pay {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.clothes-item {
+    float: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    line-height: 32px;
+    font-size: 18px;
+    text-transform: uppercase;
+    height: 40px;
+    width: 201px;
+    background-color: #323232;
+    color: #ffffff;
+    padding: 4px 14px 0 14px;
+}
+
+.price {
+    float: right;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    line-height: 32px;
+    font-size: 18px;
+    height: 40px;
+    width: 54px;
+    text-align: center;
+    background-color: #8c8c8c;
+    color: #ffffff;
+    padding-top: 4px;
+}
+
+.collection-list-item:nth-last-child(-n+4) {
+    margin-bottom: 0;
+}
+
+.collection-list-item:hover .clothes-item {
+    background-color: #1abc9c;
+}
+
+.collection-list-item:hover .price {
+    background-color: #7fd9c7;
+}
+
+.collection-list-item:hover .special-info {
+    opacity: 0.549;
+}
+
+footer {
+    text-align: center;
+    background-color: #323232;
+    padding: 14px 0;
+}
+
+footer p {
+    color: #fefefe;
+}
+
+.theme {
+    color: #46bfa9;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
