@@ -64,11 +64,6 @@ img {
     margin: 0 auto;
 }
 
-.wrapper {
-    width: 1600px;
-    margin: 0 auto;
-}
-
 .page-nav {
     padding: 31px 0 24px;
 }
@@ -148,48 +143,59 @@ img {
 }
 
 .slider {
+    width: 100%;
     padding: 0;
     margin-bottom: 102px;
-}
-
-.slider-item {
-    position: relative;
     background-color: #323232;
-    width: 1717px;
-    height: 600px;
 }
 
-.slider .slider-item::after {
-    content: "";
-    display: block;
-    background: #000002;
-    opacity: 0.25;
-    width: 100%;
-    height: 100%;
+.slider .slider-item-first {
+    position: relative;
+    background-image: linear-gradient( to top, rgba(0, 0, 2, 0.222), rgba(0, 0, 2, 0.222)), url(../img/slider/slide1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+}
+
+.slider .slider-item-second {
+    position: relative;
+    background-image: linear-gradient( to top, rgba(0, 0, 2, 0.222), rgba(0, 0, 2, 0.222)), url(../img/slider/slide2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+}
+
+.slider .slider-item-third {
+    position: relative;
+    background-image: linear-gradient( to top, rgba(0, 0, 2, 0.222), rgba(0, 0, 2, 0.222)), url(../img/slider/slide3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+}
+
+.slider .slider-item-fourth {
+    position: relative;
+    background-image: linear-gradient( to top, rgba(0, 0, 2, 0.222), rgba(0, 0, 2, 0.222)), url(../img/slider/slide4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+}
+
+.slider .description {
     position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.slider img {
-    display: block;
-    max-width: 100%;
-}
-
-.description {
-    position: absolute;
-    z-index: 2;
     text-align: left;
     margin: auto;
     top: 0;
-    bottom: 95px;
+    bottom: 94px;
     left: 0;
     right: 0;
     width: 745px;
     height: 150px;
+    z-index: 1;
 }
 
 .guide {
@@ -218,10 +224,13 @@ img {
     position: absolute;
     top: 0;
     bottom: 0;
+    margin: auto;
     padding: 52px 52px;
-    z-index: 5;
+    z-index: 2;
     font-size: 0;
+    text-align: center;
     border: none;
+    cursor: pointer;
 }
 
 .slider .slick-prev,
@@ -232,16 +241,16 @@ img {
 }
 
 .slider .slick-next {
-    margin: 227px auto 0;
-    right: 240px;
+    margin-right: -555px;
+    right: 50%;
     background: url("../img/slider/next.png") no-repeat;
     background-position: center;
     background-color: #4f9c8a;
 }
 
 .slider .slick-prev {
-    margin: 222px auto 0;
-    left: 245px;
+    margin-left: -555px;
+    left: 50%;
     background: url("../img/slider/pre.png") no-repeat;
     background-position: center;
     background-color: #4f9c8a;
