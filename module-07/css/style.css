@@ -1,0 +1,343 @@
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Roboto-Slab";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/roboto-slab-v11-latin-regular.woff2") format("woff2"), url("../fonts/roboto-slab-v11-latin-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Kaushan Script";
+    src: url("../fonts/KaushanScript-Regular.woff2") format("woff2"), url("../fonts/KaushanScript-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Dancing Script";
+    src: url("../fonts/DancingScript-Regular.woff2") format("woff2"), url("../fonts/DancingScript-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto-Slab";
+    font-size: 14px;
+    line-height: 1.2;
+    color: #777777;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: 67px;
+}
+
+.page-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 120px;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+}
+
+.site-navigation a {
+    font-family: "Montserrat-Regular";
+    display: block;
+    font-weight: 700;
+    line-height: 41px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222222;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #fed136;
+}
+
+.site-logo {
+    display: inline-block;
+    font-family: "Dancing Script";
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 26px;
+    color: #fed136;
+    line-height: 41px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    letter-spacing: 3px;
+}
+
+.services {
+    margin-bottom: 117px;
+}
+
+.services-title {
+    font-family: "Montserrat-Bold";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #222222;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin: 0;
+    padding: 0;
+}
+
+.services-about {
+    font-family: "Kaushan Script";
+    font-size: 16px;
+    color: #777777;
+    font-style: normal;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 77px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.services-list-item {
+    width: 286px;
+    text-align: center;
+}
+
+.services-list-item:before {
+    content: "";
+    display: block;
+    height: 73px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.direction {
+    font-family: "Montserrat-Bold";
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #222222;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.description {
+    font-size: 14px;
+    font-family: "Roboto-Slab";
+    font-weight: 400;
+    line-height: 1.46;
+    color: #777777;
+    margin: 0;
+}
+
+.icon-commerce::before {
+    background-image: url(../img/icons/icon1.png);
+}
+
+.icon-responce::before {
+    background-image: url(../img/icons/icon2.png);
+}
+
+.icon-security::before {
+    background-image: url(../img/icons/icon3.png);
+}
+
+.contacts {
+    background-image: url(../img/Background.jpg);
+    width: 100%;
+    height: 678px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contacts-title {
+    font-family: "Montserrat-Bold";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 0;
+    padding-top: 106px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 307px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    height: 212px;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-radius: 2px;
+    background-color: #ffffff;
+    width: 456px;
+    height: 52px;
+}
+
+.message {
+    width: 455px;
+    height: 212px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 456px;
+    height: 211px;
+    letter-spacing: -1px;
+}
+
+button {
+    font-size: 18px;
+    font-family: "Montserrat-Bold";
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    background-color: #fed136;
+    width: 240px;
+    height: 65px;
+    margin: 27px auto 0;
+}
+
+::-webkit-input-placeholder {
+    font-size: 14px;
+    font-family: "Montserrat-Bold";
+    color: #bbbbbb;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 14px 18px;
+}
+
+input:valid:focus {
+    outline: solid 5px #008000;
+}
+
+input:invalid:focus {
+    outline: solid 5px #ff0000;
+}
+
+textarea:valid:focus {
+    outline: solid 5px #008000;
+}
+
+textarea:invalid:focus {
+    outline: solid 5px #ff0000;
+}
+
+::-moz-placeholder {
+    font-size: 14px;
+    font-family: "Montserrat-Bold";
+    color: #bbbbbb;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    padding: 20px 20px;
+}
+
+:-moz-placeholder {
+    font-size: 14px;
+    font-family: "Montserrat-Bold";
+    color: #bbbbbb;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    padding: 20px 20px;
+}
+
+:-ms-input-placeholder {
+    font-size: 14px;
+    font-family: "Montserrat-Bold";
+    color: #bbbbbb;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    padding: 20px 20px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
