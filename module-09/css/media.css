@@ -1,0 +1,103 @@
+            @media (min-width: 768px) {
+                .container {
+                    max-width: 748px;
+                }
+                .page-nav {
+                    padding: 18px 0 0;
+                    margin-bottom: 130px;
+                }
+                .site-logo {
+                    padding-top: 29px;
+                    margin-left: 5px;
+                    letter-spacing: 0.5px;
+                }
+                .site-navigation {
+                    margin-top: 18px;
+                    margin-right: 12px;
+                    margin-bottom: 0;
+                }
+                .site-navigation li {
+                    margin-right: 16px;
+                    margin-left: -24px;
+                }
+                .holiday-title {
+                    max-width: 500px;
+                    font-size: 51.97px;
+                    letter-spacing: -1.5px;
+                    margin-bottom: 25px;
+                }
+                .holiday-about {
+                    max-width: 768px;
+                    font-size: 23.99px;
+                    line-height: 1.2;
+                    margin-bottom: 33px;
+                }
+                .partner {
+                    width: 226px;
+                    margin-bottom: 234px;
+                }
+                .team-title {
+                    max-width: 600px;
+                    line-height: 1.18;
+                    letter-spacing: -0.5px;
+                    padding: 4px;
+                }
+                .team-list {
+                    margin: 22px 15% 25px 14%;
+                }
+                .team-list-item {
+                    margin-bottom: 44px;
+                    margin-top: 0px;
+                }
+                .team-list-item:nth-child(3) {
+                    margin-right: 0;
+                }
+                .team-list-item:nth-child(4) {
+                    margin-right: 0;
+                }
+                .team-list-item:nth-child(even) {
+                    margin-bottom: 0;
+                }
+                .about {
+                    padding: 0;
+                }
+                .other {
+                    width: 192px;
+                    margin: 0 0 40px 10px;
+                }
+            }
+            
+            @media (min-width: 992px) {
+                .container {
+                    max-width: 940px;
+                }
+                .site-navigation {
+                    margin-right: -23px;
+                }
+                .site-navigation li {
+                    margin-right: 0px;
+                    margin-left: -9px;
+                }
+                .site-logo {
+                    padding-top: 29px;
+                    margin-left: -57px;
+                }
+                .partner {
+                    width: 226px;
+                    margin: 0 auto 234px;
+                }
+                .team-title {
+                    padding: 0;
+                }
+                .team-list {
+                    width: 960px;
+                    margin: 28px -28px 14px -28px;
+                }
+                .team-list-item:nth-child(even) {
+                    order: 1;
+                }
+                .other {
+                    width: 190px;
+                    margin: 0 auto 73px;
+                }
+            }
