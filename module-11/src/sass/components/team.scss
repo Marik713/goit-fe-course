@@ -1,0 +1,69 @@
+.team {
+    margin-bottom: 63px;
+    .team__introduction {
+        font-size: $main-text-size;
+        font-family: $main-font-stack;
+        font-weight: 400;
+        color: $secondary-dark-color;
+        line-height: 1.6;
+        text-align: center;
+        margin: -4px 0 87px;
+    }
+    .team__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .team__item {
+        position: relative;
+        width: 381px;
+        height: auto;
+        background-color: #95e1d3;
+        &:hover::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 471px;
+            background-image: linear-gradient(90deg, #fce38a 0%, #f38181 100%);
+            top: -10px;
+            left: -10px;
+            opacity: 0.8;
+        }
+        &:hover .team__item-img {
+            transition: 0.2 linear;
+            transform: translate(-10px, -10px);
+        }
+        &:hover .socials {
+            transition: 0.2s linear;
+            opacity: 1;
+            top: 48%;
+            left: 48%
+        }
+        &:focus .socials {
+            transition: 0.2s linear;
+            opacity: 1;
+            top: 48%;
+            left: 48%
+        }
+    }
+    .team__item--name {
+        font-family: "Montserrat-Regular";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.2;
+        color: $primery-dark-color;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: -0.5px;
+        padding-top: 24px;
+        margin: 0;
+    }
+    .team__item--occupation {
+        font-family: $accent-font;
+        font-weight: 300;
+        font-size: $main-text-size;
+        line-height: $main-text-height;
+        color: $secondary-dark-color;
+        text-align: center;
+        margin-top: 6px;
+    }
+}

@@ -1,0 +1,133 @@
+.service {
+    margin-bottom: 88px;
+    .service__title {
+        font-family: $title-font;
+        font-size: 24px;
+        line-height: 1.2;
+        color: $primery-dark-color;
+        text-align: center;
+        margin: 44px 0 13px;
+        padding: 0;
+    }
+    .service__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .service__item {
+        flex: 0 0 304px;
+        text-align: left;
+        margin-bottom: 75px;
+        &:nth-last-child(-n+3) {
+            margin-bottom: 0;
+        }
+    }
+    .service__item-direction {
+        font-size: 14px;
+        font-family: "Montserrat-Regular";
+        font-weight: 800;
+        color: $primery-dark-color;
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .service__item-instrument {
+        font-size: $main-text-size;
+        font-family: $main-font-stack;
+        font-weight: 400;
+        color: $secondary-dark-color;
+        line-height: 1.6;
+        margin: 0;
+    }
+    .service__icon--alarm {
+        left: 46px;
+    }
+    .service__icon--line {
+        left: 43px;
+    }
+    .service__icon--computer {
+        left: 40px;
+    }
+    .service__icon--book {
+        left: 46px;
+    }
+    .service__icon--home {
+        left: 43px;
+    }
+    .service__icon--image {
+        left: 40px;
+    }
+}
+
+.service__icon {
+    &::before {
+        position: absolute;
+        @include pseudo($display: block);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &--alarm::before {
+        background-image: url(../images/icons/service/icon1.png);
+        width: 32px;
+        height: 32px;
+        top: 23px;
+        left: -59px;
+    }
+    &--line::before {
+        background-image: url(../images/icons/service/icon2.png);
+        width: 32px;
+        height: 32px;
+        top: 22px;
+        left: -58px;
+    }
+    &--computer::before {
+        background-image: url(../images/icons/service/icon3.png);
+        width: 31px;
+        height: 28px;
+        top: 23px;
+        left: -59px;
+    }
+    &--book::before {
+        background-image: url(../images/icons/service/icon4.png);
+        width: 32px;
+        height: 32px;
+        top: 21px;
+        left: -58px;
+    }
+    &--home::before {
+        background-image: url(../images/icons/service/icon5.png);
+        width: 32px;
+        height: 31px;
+        top: 21px;
+        left: -59px;
+    }
+    &--image::before {
+        background-image: url(../images/icons/service/icon6.png);
+        width: 32px;
+        height: 32px;
+        top: 21px;
+        left: -59px;
+    }
+}
+
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .icon-alarm::before {
+        background-image: url(../img/icons/service/icon1@2x.png);
+    }
+    .icon-line::before {
+        background-image: url(../img/icons/service/icon2@2x.png);
+    }
+    .icon-computer::before {
+        background-image: url(../img/icons/service/icon3@2x.png);
+    }
+    .icon-book::before {
+        background-image: url(../img/icons/service/icon4@2x.png);
+    }
+    .icon-home::before {
+        background-image: url(../img/icons/service/icon5@2x.png);
+    }
+    .icon-image::before {
+        background-image: url(../img/icons/service/icon6@2x.png);
+    }
+}

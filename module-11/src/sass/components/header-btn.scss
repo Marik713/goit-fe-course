@@ -1,0 +1,16 @@
+.header-btn {
+    display: block;
+    margin: 0px auto;
+    font-size: 14px;
+    font-family: $secondary-font-stack;
+    color: $primary-white-color;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: $primary-white-color;
+    background-color: #f0c988;
+    width: 164px;
+    height: 40px;
+}

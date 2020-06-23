@@ -1,0 +1,11 @@
+.page-nav {
+    @include center-flex("ver");
+    justify-content: space-between;
+    min-height: 103px;
+    margin-bottom: 115px;
+}
+
+.page-nav__site-navigation {
+    width: 618px;
+    letter-spacing: 1px;
+}

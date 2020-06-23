@@ -1,0 +1,51 @@
+.page-footer {
+    @include center-flex("ver");
+    justify-content: space-between;
+    padding: 30px 0;
+    height: 60px;
+    border-top: solid 1px #e5e5e5;
+    .page-footer__production {
+        font-family: $secondary-font-stack;
+        color: $primery-dark-color;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: normal;
+        .page-footer__production--theme {
+            font-family: "Montserrat-Regular";
+            color: #f6a1a1;
+            font-size: 14px;
+            line-height: 1.2;
+        }
+    }
+}
+
+.response {
+    display: flex;
+    .response__mail {
+        font-family: $accent-font;
+        font-size: $main-text-size;
+        line-height: 1.6;
+        font-weight: 300;
+        padding: 14px 12px;
+        width: 230px;
+        height: 40px;
+        border: solid 1px #e7e7e7;
+    }
+    .response__subscribe {
+        font-family: $secondary-font-stack;
+        background-color: #95e1d3;
+        font-size: 14px;
+        color: $primary-white-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.2;
+        width: 151px;
+        height: 40px;
+        text-align: center;
+        border: none;
+    }
+}
+
+::placeholder {
+    color: #e7e7e7;
+}

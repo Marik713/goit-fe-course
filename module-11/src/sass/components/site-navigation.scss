@@ -1,0 +1,44 @@
+.site-navigation {
+    @include center-flex("ver");
+    justify-content: space-between;
+    font-size: 13px;
+    &__item {
+        padding-bottom: 12px;
+        text-decoration: underline 0.2s linear;
+        &:hover {
+            fill: $navigation-color-accent;
+            border-bottom: solid 3px $navigation-color-accent;
+        }
+    }
+    &__link {
+        font-family: "Montserrat-Regular", sans-serif;
+        font-weight: 400;
+        line-height: 10px;
+        text-transform: uppercase;
+        color: $color-link;
+        transition: color 0.2s linear;
+        &:hover {
+            color: $navigation-color-accent;
+        }
+        &:focus {
+            color: $navigation-color-accent;
+        }
+    }
+    &__icon-navigation {
+        display: block;
+        width: 18px;
+        height: 18px;
+        fill: $color-link;
+        &:hover {
+            fill: $navigation-color-accent;
+        }
+    }
+}
+
+.site-navigation__item--active {
+    border-bottom: solid 3px $navigation-color-accent;
+}
+
+.site-navigation__link--active {
+    color: $navigation-color-accent;
+}
